@@ -148,6 +148,8 @@ if __name__ == '__main__':
     """
     # init args
     os.chdir("..")
+    for a in os.listdir(os.getcwd()):
+        print(a)
     args = init_args()
 
     test_lanenet(args.image_path, args.weights_path)
