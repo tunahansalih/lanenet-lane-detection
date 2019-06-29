@@ -147,6 +147,7 @@ if __name__ == '__main__':
     test code
     """
     # init args
+    os.chdir("..")
     args = init_args()
 
     test_lanenet(args.image_path, args.weights_path)
