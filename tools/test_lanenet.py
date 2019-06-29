@@ -11,14 +11,13 @@ test LaneNet model on single image
 import argparse
 import os.path as ops
 import time
-import os
 import cv2
 import glog as log
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 
-os.chdir("..")
+
 
 
 from config import global_config
@@ -150,8 +149,7 @@ if __name__ == '__main__':
     test code
     """
     # init args
-    for a in os.listdir(os.getcwd()):
-        print(a)
+    
     args = init_args()
 
     test_lanenet(args.image_path, args.weights_path)
