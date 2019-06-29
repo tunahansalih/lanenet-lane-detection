@@ -11,7 +11,7 @@ test LaneNet model on single image
 import argparse
 import os.path as ops
 import time
-
+import os
 import cv2
 import glog as log
 import matplotlib.pyplot as plt
