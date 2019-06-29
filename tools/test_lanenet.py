@@ -18,6 +18,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 
+os.chdir("..")
+
+
 from config import global_config
 from lanenet_model import lanenet
 from lanenet_model import lanenet_postprocess
@@ -147,7 +150,6 @@ if __name__ == '__main__':
     test code
     """
     # init args
-    os.chdir("..")
     for a in os.listdir(os.getcwd()):
         print(a)
     args = init_args()
